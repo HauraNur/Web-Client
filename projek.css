@@ -48,3 +48,41 @@ body {
 .header ul li a:hover {
     background-color: #b3afaf;
 }
+
+.container {
+    height: 500px;
+    background: linear-gradient(to right, #1f5cff, #1d39c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    color: white;
+    font-size: 26px;
+    width: 900px;
+    line-height: 1.5;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+.btn {
+    background-color: white;
+    color: #1f5cff;
+    padding: 18px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
