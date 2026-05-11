@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+body {
+    background-color: rgb(177, 242, 247);
+}
+
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.header p {
+    margin-left: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(21, 93, 252, 1)
+}
+
+.header ul {
+    list-style: none;
+    margin-left: auto;
+    margin-right: 150px;
+    display: flex;
+}
+
+.header ul li {
+    margin-left: 60px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 10px;
+}
+
+.header ul li a:hover {
+    background-color: #b3afaf;
+}
