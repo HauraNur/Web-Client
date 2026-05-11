@@ -165,3 +165,65 @@ body {
 .btn-submit:hover {
     background-color: #1d39c4;
 }
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #214569;
+    color: #ffffff;
+    padding: 40px 10%;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #3e4f5f;
+    padding-top: 20px;
+    color: #bdc3c7;
+    font-size: 12px;
+}
