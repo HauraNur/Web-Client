@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const nama = document.getElementById('nama').value;
             const email = document.getElementById('email').value;
+            const telepon = document.getElementById('telepon').value;
+            const layanan = document.getElementById('layanan').value;
             const pesan = document.getElementById('pesan').value;
 
             alert('Terima kasih, ' + nama + '! Pesan Anda telah terkirim.');
