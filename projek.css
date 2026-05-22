@@ -63,7 +63,7 @@ body {
     color: white;
     font-size: 48px;
     margin-bottom: 20px;
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 .hero p {
@@ -100,7 +100,7 @@ body {
 
 /* ===== Contact Page ===== */
 .contact-hero {
-    height: 300px;
+    height: 400px;
 }
 
 .contact-page {
@@ -338,4 +338,121 @@ body {
     padding-top: 20px;
     color: #bdc3c7;
     font-size: 12px;
+}
+
+/* ===== Why Choose Us Cards Section ===== */
+.why-choose-us {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.why-choose-us .section-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.why-us-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.why-us-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.why-us-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(31, 92, 255, 0.08);
+    border-color: rgba(31, 92, 255, 0.15);
+}
+
+.why-us-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.why-us-card:hover .why-us-icon {
+    transform: scale(1.08);
+}
+
+.why-us-icon svg {
+    color: #1f5cff;
+    width: 44px;
+    height: 44px;
+}
+
+.why-us-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.why-us-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+    .why-us-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .why-choose-us {
+        margin: 60px auto;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .why-us-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .why-choose-us h2 {
+        font-size: 28px;
+    }
+
+    .why-choose-us .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .why-choose-us {
+        margin: 40px auto;
+    }
 }
