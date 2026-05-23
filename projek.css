@@ -456,3 +456,132 @@ body {
         margin: 40px auto;
     }
 }
+
+/* ===== Services Section (Layanan Kami) ===== */
+.services-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.services-section .section-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.services-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(31, 92, 255, 0.06);
+    border-color: rgba(31, 92, 255, 0.12);
+}
+
+.services-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.services-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.services-action {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-more {
+    display: inline-block;
+    background-color: #1f5cff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(31, 92, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #1d39c4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(31, 92, 255, 0.3);
+}
+
+/* Responsive Grid for Services */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .services-section {
+        margin: 60px auto;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .services-section h2 {
+        font-size: 28px;
+    }
+
+    .services-section .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .services-section {
+        margin: 40px auto;
+    }
+
+    .btn-more {
+        width: 100%;
+        text-align: center;
+    }
+}
