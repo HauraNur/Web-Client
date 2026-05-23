@@ -98,7 +98,6 @@ body {
     background-color: #ececec;
 }
 
-/* ===== Contact Page ===== */
 .contact-hero {
     height: 400px;
 }
@@ -112,7 +111,6 @@ body {
     align-items: flex-start;
 }
 
-/* Left Column: Contact Cards */
 .contact-cards {
     flex: 1;
     display: flex;
@@ -199,7 +197,6 @@ body {
     margin-top: 6px !important;
 }
 
-/* Right Column: Contact Form */
 .contact-form-wrapper {
     flex: 1;
     position: sticky;
@@ -278,7 +275,6 @@ body {
     cursor: pointer;
 }
 
-/* ===== Footer ===== */
 .footer {
     background-color: #214569;
     color: #ffffff;
@@ -340,7 +336,6 @@ body {
     font-size: 12px;
 }
 
-/* ===== Why Choose Us Cards Section ===== */
 .why-choose-us {
     max-width: 1200px;
     margin: 80px auto;
@@ -424,7 +419,6 @@ body {
     margin: 0;
 }
 
-/* Responsive Grid */
 @media (max-width: 1024px) {
     .why-us-cards {
         grid-template-columns: repeat(2, 1fr);
@@ -457,7 +451,6 @@ body {
     }
 }
 
-/* ===== Services Section (Layanan Kami) ===== */
 .services-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -548,7 +541,6 @@ body {
     box-shadow: 0 6px 20px rgba(31, 92, 255, 0.3);
 }
 
-/* Responsive Grid for Services */
 @media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -583,5 +575,200 @@ body {
     .btn-more {
         width: 100%;
         text-align: center;
+    }
+}
+
+.services-page {
+    padding: 70px 40px 90px;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.services-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.services-header p {
+    max-width: 760px;
+    margin: auto;
+
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.services-list {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.service-item {
+    background-color: white;
+
+    border-radius: 16px;
+    padding: 38px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    border: 1px solid rgba(0,0,0,0.04);
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(31, 92, 255, 0.08);
+
+    border-color: rgba(31, 92, 255, 0.1);
+}
+
+.service-icon {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+
+    background-color: #eef4ff;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon i {
+    font-size: 24px;
+    color: #1f5cff;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+
+    margin-bottom: 12px;
+}
+
+.service-content p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #6b7280;
+}
+
+.service-benefit-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.service-benefits {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-benefits li {
+    position: relative;
+
+    padding-left: 26px;
+    margin-bottom: 12px;
+
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.service-benefits li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #1f5cff;
+    font-weight: bold;
+}
+
+.services-cta {
+    max-width: 1200px;
+    margin: 80px auto 0;
+
+    background: linear-gradient(to right, #1f5cff, #1d39c4);
+
+    border-radius: 16px;
+
+    padding: 65px 30px;
+
+    text-align: center;
+}
+
+.services-cta h2 {
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.services-cta p {
+    color: rgba(255,255,255,0.88);
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+
+    .services-page {
+        padding: 50px 20px 70px;
+    }
+
+    .services-header h1 {
+        font-size: 34px;
+    }
+
+    .services-header p {
+        font-size: 15px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        padding: 28px;
+    }
+
+    .service-content h3 {
+        font-size: 24px;
+    }
+
+    .services-cta {
+        padding: 45px 24px;
+    }
+
+    .services-cta h2 {
+        font-size: 28px;
     }
 }
