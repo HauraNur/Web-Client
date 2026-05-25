@@ -871,3 +871,22 @@ body {
         font-size: 30px;
     }
 }
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 0px;           
+}
+
+.logo-img {
+    height: 70px;       
+    width: auto;       
+    object-fit: contain;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
